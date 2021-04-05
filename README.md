@@ -1,6 +1,9 @@
 # ComputerVision-Image-Representations-and-Point-Operations
 
+  <img src="https://docs.opencv.org/master/equalization_opencv.jpg" width="700" height="200" />
+
 python version: 3.9
+
 platform: visual studio code
 
 

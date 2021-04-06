@@ -1,6 +1,9 @@
 # ComputerVision-Image-Representations-and-Point-Operations
 
+  <img src="https://docs.opencv.org/master/equalization_opencv.jpg" width="700" height="200" />
+
 python version: 3.9
+
 platform: visual studio code
 
 
@@ -48,5 +51,15 @@ gamma.py-
     		GUI for gamma correction
 	def adjust_gamma(image: np.ndarray, gamma: float) -> np.ndarray:
         	Gamma correction
+
+testImg1.jpg - dark image.
+
+	i chose this image because the original image was very dark and i would expect the histogram equalization function 		to turn it into more brighter and clear image
+	
+testImg2.jpg - standard image with many colors.
+	
+	i chose this image to examine whether the quantizeImage() works on a images with many colors.
+	
+
 
 

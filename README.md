@@ -52,4 +52,7 @@ gamma.py-
 	def adjust_gamma(image: np.ndarray, gamma: float) -> np.ndarray:
         	Gamma correction
 
+testImg1.jpg - 
+
+	i chose this image because the original image was very dark and i would expect the histogram equalization function 		to turn it into more brighter and clear image 
 

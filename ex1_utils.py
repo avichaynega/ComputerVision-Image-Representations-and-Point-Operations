@@ -43,6 +43,7 @@ def imReadAndConvert(filename: str, representation: int) -> np.ndarray:
 		else cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 	final_img = (img_color - img_color.min()) / (img_color.max() - img_color.min())  # normalization
 	return final_img
+	pass
 
 
 def imDisplay(filename: str, representation: int):
@@ -60,6 +61,7 @@ def imDisplay(filename: str, representation: int):
 		img_color = imReadAndConvert(filename, representation)
 	plt.imshow(img_color)
 	plt.show()
+	pass
 
 
 def transformRGB2YIQ(imgRGB: np.ndarray) -> np.ndarray:
@@ -218,12 +220,13 @@ def quantizeImage(imOrig: np.ndarray, nQuant: int, nIter: int) -> (List[np.ndarr
 
 	pass
 
+# img = cv2.imread('pic2check.jpg')
+# img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 ##############check imDisplay and imread
 # imDisplay('Red-Rose.jpg', 1)
 
 ##############check transformRGB2YIQ
-# img = cv2.imread('Red-Rose.jpg')
-# img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+
 # plt.imshow(transformRGB2YIQ(img))
 # plt.show()
 
@@ -231,9 +234,6 @@ def quantizeImage(imOrig: np.ndarray, nQuant: int, nIter: int) -> (List[np.ndarr
 # plt.show()
 
 ###############check transformYIQ2RGB
-
-# img = cv2.imread('Red-Rose.jpg')
-# img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
 # yiq2 = rgb2yiq(img)
 # plt.imshow(transformYIQ2RGB(yiq2))
@@ -245,14 +245,11 @@ def quantizeImage(imOrig: np.ndarray, nQuant: int, nIter: int) -> (List[np.ndarr
 
 ###############check hsitogramEqualize(imgOrig: np.ndarray)
 
-# img = cv2.imread('sample.jpeg')
-# img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-# hsitogramEqualize(img)
-
-
+ 
+# plt.imshow(hsitogramEqualize(img)[0])
+# plt.show()
 ###############check quantizeImage(imOrig: np.ndarray, nQuant: int, nIter: int)
-	# img = cv2.imread('water_bear.png')
-	# img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-	# img = np.array([1,2,3,4])
-	# quantizeImage(img,5,5)
+
+# plt.imshow(quantizeImage(img,50,50)[0][-1])
+# plt.show()
 

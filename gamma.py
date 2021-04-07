@@ -45,6 +45,7 @@ def gammaDisplay(img_path: str, rep: int):
 		if cv2.getWindowProperty(title_window, cv2.WND_PROP_VISIBLE) < 1:
 			break
 	cv2.destroyAllWindows()
+	pass
 
 def adjust_gamma(image: np.ndarray, gamma: float) -> np.ndarray:
 	"""

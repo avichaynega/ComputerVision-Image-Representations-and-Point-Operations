@@ -54,9 +54,13 @@ gamma.py-
 
 testImg1.jpg - dark image.
 
-	i chose this image because the original image was very dark and i would expect the histogram equalization function 		to turn it into more brighter and clear image
+<img src="testImg1.jpg" width="200" height="200" />
+
+	i chose this image because the original image was very dark and i would expect the histogram equalization function to turn it into more brighter and clear image
 	
 testImg2.jpg - standard image with many colors.
+
+<img src="testImg2.jpg" width="200" height="200" />
 	
 	i chose this image to examine whether the quantizeImage() works on a images with many colors.
 	
